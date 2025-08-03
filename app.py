@@ -31,7 +31,7 @@ with st.expander("🔍 Disclaimers & Safety Notes", expanded=False):
 
 
 # Input API key
-api_key = st.text_input("🔑 Your OpenAI API Key (retrieve yours [here](https://platform.openai.com/settings/profile/api-keys)", type="password")
+api_key = st.text_input("🔑 Your OpenAI API Key (retrieve yours [here](https://platform.openai.com/settings/profile/api-keys))", type="password")
 #st.caption("🛡️ Using a public device? [Revoke your key](https://platform.openai.com/account/api-keys) after you're done.")
 
 # Session state setup
@@ -86,7 +86,7 @@ else:
 
 MAX_EMAIL_LENGTH = 254
 
-with st.expander("📬 Want a full version? (Click to sign up)", expanded=False):
+with st.expander("📬 Want a full version?", expanded=False):
     st.markdown("This is just a wrapper on ChatGPT right now. "
                 "We could build a version with no API key, saved sessions, and smarter back-and-forth conversation.")
     st.markdown("Want it? Drop your email and we’ll let you know when it’s live:")
