@@ -12,8 +12,6 @@ st.markdown(
     Ever feel like ChatGPT just takes your side?
 
     **OtherHand** flips the script — it reconstructs the *other person’s perspective* and gives a thoughtful, neutral response.
-
-    _You'll need your own OpenAI API key. You can [get yours here](https://platform.openai.com/settings/profile/api-keys). It’s only used in your browser and never stored._
     """
 )
 
@@ -27,14 +25,14 @@ with st.expander("🔍 Disclaimers & Safety Notes", expanded=False):
         - Use your best judgment and always consult qualified professionals for serious personal, emotional, or medical situations.
         - If you are in crisis, consider reaching out to a licensed therapist, a medical professional, or a trusted support hotline.
         - We do **not** store your data or your OpenAI key. Your session is temporary and local to your browser.
-        - If you are using a public or shared device, [revoke your key](https://platform.openai.com/account/api-keys) after use.
+        - 🛡 If you are using a public or shared device, [revoke your key](https://platform.openai.com/account/api-keys) after use.
         """
     )
 
 
 # Input API key
-api_key = st.text_input("🔑 Your OpenAI API Key", type="password")
-st.caption("🛡️ Using a public device? [Revoke your key](https://platform.openai.com/account/api-keys) after you're done.")
+api_key = st.text_input("🔑 Your OpenAI API Key (retrieve yours [here](https://platform.openai.com/settings/profile/api-keys)", type="password")
+#st.caption("🛡️ Using a public device? [Revoke your key](https://platform.openai.com/account/api-keys) after you're done.")
 
 # Session state setup
 if "messages" not in st.session_state:
